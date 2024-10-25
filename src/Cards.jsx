@@ -28,7 +28,7 @@ const projects = [
     technologies: ["React.js", "Tailwind CSS", "Firebase", "React Tooltip"],
     githubCLink: "https://github.com/az00102/Roamify-client-side",
     githubSLink: "https://github.com/az00102/Roamify-server-side",
-    liveLink: "https://b9-a11-8d2de.web.app/",
+    liveLink: "https://roamify-282b4.web.app/",
   },
 ];
 
