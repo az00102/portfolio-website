@@ -52,8 +52,8 @@ export const InfiniteMovingCards = ({
         speed === "fast"
           ? "20s"
           : speed === "normal"
-          ? "40s"
-          : "80s"
+            ? "40s"
+            : "80s"
       );
     }
   };
@@ -93,11 +93,11 @@ export const InfiniteMovingCards = ({
               {/* Technologies */}
               <div className="mt-4">
                 <h4 className="text-gray-300 font-medium text-sm">Technologies:</h4>
-                <ul className="flex flex-wrap gap-2 mt-2">
+                <ul className="flex space-x-2 mt-2 flex-wrap">
                   {project.technologies.map((tech, index) => (
                     <li
                       key={index}
-                      className="bg-indigo-500 text-white px-2 py-1 rounded-md text-xs sm:text-sm"
+                      className="bg-indigo-500 text-white px-2 py-1 rounded-md text-xs"
                     >
                       {tech}
                     </li>
@@ -106,7 +106,7 @@ export const InfiniteMovingCards = ({
               </div>
 
               {/* Links */}
-              <div className="relative z-20 mt-4 flex flex-wrap gap-4">
+              <div className="relative z-20 mt-4 flex space-x-4">
                 {/* Live Demo Button */}
                 <a
                   href={project.liveLink}
@@ -118,12 +118,21 @@ export const InfiniteMovingCards = ({
                 </a>
                 {/* GitHub Button */}
                 <a
-                  href={project.githubLink}
+                  href={project.githubCLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-gray-600 text-white text-sm py-2 px-4 rounded-md hover:bg-gray-600 transition-colors"
+                >
+                  GitHub Client
+                </a>
+
+                <a
+                  href={project.githubSLink}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-gray-700 text-white text-sm py-2 px-4 rounded-md hover:bg-gray-600 transition-colors"
                 >
-                  GitHub
+                  GitHub Server
                 </a>
               </div>
             </blockquote>
